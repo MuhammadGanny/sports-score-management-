@@ -7,6 +7,7 @@ import teamsReducer from './redux/teamsSlice'; // Import the new teams reducer
 import AddTeamForm from './components/AddTeamForm'; // Import the AddTeamForm component
 import TeamList from './components/TeamList'; // Import the TeamList component
 import AddMatchForm from './components/AddMatchForm';
+import './index';
 
 // const store = configureStore({
 //   reducer: {

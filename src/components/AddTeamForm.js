@@ -1,18 +1,27 @@
 // components/AddTeamForm.js
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux'; // Import both useSelector and useDispatch
 import { addTeam } from '../redux/teamsSlice';
 
 const AddTeamForm = () => {
   const dispatch = useDispatch();
+  const teams = useSelector(state => state.teams); // Use useSelector to access the teams state
+
   const [teamName, setTeamName] = useState('');
 
   const handleAddTeam = () => {
     if (teamName.trim() !== '') {
-      dispatch(addTeam({ name: teamName }));
+      const newTeam = { id: teams.length + 1, name: teamName };
+      dispatch(addTeam(newTeam));
       setTeamName('');
-    }
+    } 
   };
+  // const handleAddTeam = () => {
+  //   if (teamName.trim() !== '') {
+  //     dispatch(addTeam({ name: teamName }));
+  //     setTeamName('');
+  //   }
+  // };
 
   return (
     <div className="add-team-form">
