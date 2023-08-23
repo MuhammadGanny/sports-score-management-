@@ -23,6 +23,7 @@ const teamsSlice = createSlice({
 });
 export const getTeamById = (state, teamId) => {
     return state.find((team) => team.id === teamId);
-  };
+};
+  
 export const { addTeam, deleteTeam, updateTeam } = teamsSlice.actions;
 export default teamsSlice.reducer;
