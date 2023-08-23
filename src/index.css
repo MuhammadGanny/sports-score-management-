@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,170 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+/* index.css */
+
+
+body {
+  background-color: #292b2c; 
+    color: #fff; 
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* components/AddTeamForm.css */
+.add-team-form {
+  background-color: #343a40; /* Dark gray background for form */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.add-team-form h3 {
+  color: #ff8300; /* Orange heading color */
+  margin-bottom: 10px;
+}
+
+.add-team-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #464b4c; /* Dark gray input background */
+  border: none;
+  color: #fff; /* White input text color */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.add-team-btn {
+  padding: 10px 20px;
+  background-color: #ff8300; /* Orange button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-team-btn:hover{
+  background-color: #eb723be3;
+}
+
+/* components/MatchList.css */
+.match-list {
+  background-color: #343a40; /* Dark gray background for match list */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.match-list h2 {
+  color: #ff8300; /* Orange heading color */
+  margin-bottom: 10px;
+}
+
+.match-details {
+  background-color: #464b4c; /* Dark gray background for match details */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.match-details p {
+  color: #fff;
+}
+
+.match-details input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  background-color: #5a5e5f; /* Dark gray input background */
+  border: none;
+  color: #fff; /* White input text color */
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* You can continue styling other components similarly */
+/* components/TeamList.css */
+.team-list {
+  background-color: #343a40; /* Dark gray background for team list */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.team-list h2 {
+  color: #ff8300; /* Orange heading color */
+  margin-bottom: 10px;
+}
+
+.team-item {
+  background-color: #ff8300; /* Orange background for team item */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none; /* Remove bullet points */
+}
+
+.lists {
+  color: #fff;
+  margin-right: 10px; 
+  list-style-type: none;
+  padding: 5px;
+} 
+.delete-button {
+  background-color: #e6663f; /* Red delete button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 30%;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* components/AddMatchForm.css */
+.add-match-form {
+  background-color: #343a40; /* Dark gray background for form */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.add-match-form h3 {
+  color: #ff8300; /* Orange heading color */
+  margin-bottom: 10px;
+}
+
+.add-match-form select,
+.add-match-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #464b4c; /* Dark gray input background */
+  border: none;
+  color: #fff; /* White input text color */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.add-match-btn {
+  padding: 10px 20px;
+  background-color: #ff8300; /* Orange button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-match-btn:hover{
+  background-color: #eb723be3;
+}
+
+

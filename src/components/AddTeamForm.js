@@ -23,7 +23,7 @@ const AddTeamForm = () => {
         value={teamName}
         onChange={(e) => setTeamName(e.target.value)}
       />
-      <button onClick={handleAddTeam}>Add Team</button>
+      <button className="add-team-btn" onClick={handleAddTeam}>Add Team</button>
     </div>
   );
 };

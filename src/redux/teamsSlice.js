@@ -11,9 +11,18 @@ const teamsSlice = createSlice({
     deleteTeam: (state, action) => {
       return state.filter(team => team.id !== action.payload.id);
     },
+    updateTeam: (state, action) => {
+      const { id, name } = action.payload;
+      const teamToUpdate = state.find(team => team.id === id);
+      if (teamToUpdate) {
+        teamToUpdate.name = name;
+      }
+    },
     // You can define more reducer actions here if needed
   },
 });
-
-export const { addTeam, deleteTeam } = teamsSlice.actions;
+export const getTeamById = (state, teamId) => {
+    return state.find((team) => team.id === teamId);
+  };
+export const { addTeam, deleteTeam, updateTeam } = teamsSlice.actions;
 export default teamsSlice.reducer;

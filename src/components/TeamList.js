@@ -14,11 +14,11 @@ const TeamList = () => {
   return (
     <div className="team-list">
       <h2>Team List</h2>
-      <ul>
+      <ul className="lists">
         {teams.map((team) => (
-          <li key={team.id}>
+          <li className="lists" key={team.id}>
             {team.name}
-            <button onClick={() => handleDeleteTeam(team.id)}>Delete</button>
+            <button className="delete-button"  onClick={() => handleDeleteTeam(team.id)}>Delete</button>
           </li>
         ))}
       </ul>
