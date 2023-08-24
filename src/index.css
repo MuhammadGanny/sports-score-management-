@@ -88,10 +88,11 @@ body {
   width: 60px;
   padding: 5px;
   background-color: #5a5e5f; /* Dark gray input background */
-  border: none;
+  /* border: none; */
   color: #fff; /* White input text color */
   border-radius: 4px;
   margin-right: 10px;
+  margin: 25px;
 }
 
 /* You can continue styling other components similarly */
