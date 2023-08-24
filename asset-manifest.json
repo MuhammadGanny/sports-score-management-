@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sports-score-management-/static/css/main.fe65318f.css",
-    "main.js": "/sports-score-management-/static/js/main.f2ec7f76.js",
+    "main.css": "/sports-score-management-/static/css/main.d533b71b.css",
+    "main.js": "/sports-score-management-/static/js/main.b6e259c8.js",
     "index.html": "/sports-score-management-/index.html",
-    "main.fe65318f.css.map": "/sports-score-management-/static/css/main.fe65318f.css.map",
-    "main.f2ec7f76.js.map": "/sports-score-management-/static/js/main.f2ec7f76.js.map"
+    "main.d533b71b.css.map": "/sports-score-management-/static/css/main.d533b71b.css.map",
+    "main.b6e259c8.js.map": "/sports-score-management-/static/js/main.b6e259c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe65318f.css",
-    "static/js/main.f2ec7f76.js"
+    "static/css/main.d533b71b.css",
+    "static/js/main.b6e259c8.js"
   ]
 }
