@@ -13,6 +13,7 @@ const MatchDetails = ({ match }) => {
   const team2 = getTeamById(useSelector((state) => state.teams), match.team2Id);
 
   const handleScoreChange = () => {
+    
     dispatch(updateScore({ id: match.id, score1, score2 }));
   };
 
@@ -30,9 +31,9 @@ const MatchDetails = ({ match }) => {
           value={score2}
           onChange={(e) => setScore2(e.target.value)}
         />
-        {/* <button className="btn btn-primary" onClick={handleScoreChange}>
+        <button className="update-btn" onClick={handleScoreChange}>
           Update Score
-        </button> */}
+        </button>
       </p>
       <p>Score: {score1} - {score2}</p> {/* Display the scores */}
     </div>

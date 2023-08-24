@@ -94,6 +94,17 @@ body {
   margin-right: 10px;
   margin: 25px;
 }
+.update-btn{
+  padding: 10px 20px;
+  background-color: #ff8300; /* Orange button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.update-btn:hover{
+  background-color: #eb723be3;
+}
 
 /* You can continue styling other components similarly */
 /* components/TeamList.css */

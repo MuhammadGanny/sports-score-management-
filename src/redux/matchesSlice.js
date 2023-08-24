@@ -18,9 +18,13 @@ const matchesSlice = createSlice({
       });
     },
     updateScore: (state, action) => {
-      // Update the score of a match based on the action payload
+      const { id, score1, score2 } = action.payload;
+      const matchToUpdate = state.find(match => match.id === id);
+      if (matchToUpdate) {
+        matchToUpdate.score1 = score1;
+        matchToUpdate.score2 = score2;
+      }
     },
-    // You can define more reducer actions here if needed
   },
 });
 
